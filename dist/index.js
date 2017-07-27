@@ -69,8 +69,8 @@ function EditList() {
                 return onEnter.apply(undefined, args);
             // case KEY_TAB:
             //     return onTab(...args);
-            // case KEY_BACKSPACE:
-            //     return onBackspace(...args);
+            case KEY_BACKSPACE:
+                return onBackspace.apply(undefined, args);
         }
     }
 
