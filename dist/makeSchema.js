@@ -13,7 +13,7 @@ function makeSchema(opts) {
     return {
         rules: [listsContainOnlyItems(opts), itemsDescendList(opts),
         // Must be after itemsDescendList
-        itemsContainBlocks(opts)]
+        itemsContainBlocks(opts), joinAdjacentLists(opts)]
     };
 }
 
